@@ -56,7 +56,7 @@ class _MyFormState extends State<MyForm> {
                         ),
                         SizedBox(height: 5),
                         ui.bigButton.primary(
-                          text: "Далее",
+                          text: "Подтвердить",
                           onPressed: null,
                           enabled: false,
                         ),
