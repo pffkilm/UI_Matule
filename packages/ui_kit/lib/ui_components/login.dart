@@ -4,20 +4,20 @@ import 'package:ui_kit/ui_kit.dart';
 class LogoButtons {
   const LogoButtons();
 
-  // Кнопка "Войти с VK"
+
   Widget vk({VoidCallback? onPressed, bool enabled = true}) {
     return _buildButton(
-      ui.images.VK(size: 32),
+      ui.images.vk(size: 32),
       "Войти с VK",
       onPressed,
       enabled,
     );
   }
 
-  // Кнопка "Войти с Yandex"
+
   Widget yandex({VoidCallback? onPressed, bool enabled = true}) {
     return _buildButton(
-      ui.images.YANDEX(size: 32),
+      ui.images.yandex(size: 32),
       "Войти с Yandex",
       onPressed,
       enabled,

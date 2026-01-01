@@ -38,7 +38,7 @@ class _SimpleInputState extends State<Input> {
   void initState() {
     super.initState();
     _controller = TextEditingController(text: widget.value);
-    _showPassword = true;
+    _showPassword = false;
   }
 
   @override
@@ -70,7 +70,7 @@ class _SimpleInputState extends State<Input> {
                 obscureText: widget.isPassword && !_showPassword,
                 obscuringCharacter: '*',
                 cursorColor:
-                    widget.hasError ? ui.colors.error : ui.colors.accent,
+                widget.hasError ? ui.colors.error : ui.colors.accent,
                 decoration: InputDecoration(
                   hintText: widget.hint,
                   hintStyle: ui.typography.textRegular.copyWith(
@@ -79,19 +79,19 @@ class _SimpleInputState extends State<Input> {
                   // Заливка
                   filled: true,
                   fillColor: widget.hasError
-                      ?Color(0x1AFD3535)
-                      : ui.colors.inputBg,
+                      ? Color(0x1AFD3535)
+                      : ui.colors.input,
 
                   // Иконка глаза для пароля
                   suffixIcon: widget.isPassword && widget.showEyeIcon
                       ? IconButton(
-                          icon: _showPassword
-                              ? ui.images.eyes(size: 20)
-                              : ui.images.EyesC(size: 20),
-                          onPressed: () {
-                            setState(() => _showPassword = !_showPassword);
-                          },
-                        )
+                    icon: _showPassword
+                        ? ui.images.eyes(size: 20)
+                        : ui.images.EyesC(size: 20),
+                    onPressed: () {
+                      setState(() => _showPassword = !_showPassword);
+                    },
+                  )
                       : null,
 
                   // Границы
@@ -119,7 +119,7 @@ class _SimpleInputState extends State<Input> {
             style: TextStyle(
               fontSize: 12,
               color:
-                  widget.hasError ? ui.colors.error : ui.colors.inputBackground,
+              widget.hasError ? ui.colors.error : ui.colors.inputBackground,
             ),
           ),
         ],

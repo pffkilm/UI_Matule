@@ -50,8 +50,6 @@ class MatuleKit {
   Toggle get toggle =>  Toggle ();
   Cards get base => Cards();
   ProductCard get productCard => ProductCard();
-  // PrimaryCardFactory get primaryCard => PrimaryCardFactory();
-  // Cart2Factory get cart2 => Cart2Factory();
 }
 
 final ui = MatuleKit();

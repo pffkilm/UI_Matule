@@ -23,7 +23,7 @@ class ProductCard {
                 overflow: TextOverflow.ellipsis,
               ),
             ),
-          SizedBox(height: 16),
+            SizedBox(height: 16),
             Expanded(
               child: Row(
                 children: [
@@ -62,7 +62,7 @@ class ProductCard {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(title, style: ui.typography.headlineMedium),
-           SizedBox(height: 36),
+          SizedBox(height: 36),
           Row(
             children: [
               if (subtitle != null) ...[
@@ -139,7 +139,7 @@ class _CartItemStatefulWidgetState extends State<_CartItemStatefulWidget> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
-            crossAxisAlignment: CrossAxisAlignment.start, // ← добавить эту строку
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Expanded(
                 child: Text(
@@ -169,8 +169,8 @@ class _CartItemStatefulWidgetState extends State<_CartItemStatefulWidget> {
           Row(
             children: [
               Text(
-                '${widget.price} ₽',
-                style: ui.typography.title3Semibold
+                  '${widget.price} ₽',
+                  style: ui.typography.title3Semibold
               ),
 
               const Spacer(),

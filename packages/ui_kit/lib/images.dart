@@ -27,8 +27,8 @@ class AppImages {
   Image tg({double? size, Color? color}) => _icon('tg', size: size, color: color);
   Image trueIcon({double? size, Color? color}) => _icon('true', size: size, color: color);
   Image voice({double? size, Color? color}) => _icon('voice', size: size, color: color);
-  Image VK({double? size, Color? color}) => _icon('VK', size: size, color: color);
-  Image YANDEX({double? size, Color? color}) => _icon('YANDEX', size: size, color: color);
+  Image vk({double? size, Color? color}) => _icon('vk', size: size, color: color);
+  Image yandex({double? size, Color? color}) => _icon('yandex', size: size, color: color);
   Image EyesC({double? size, Color? color}) => _icon('EyesC', size: size, color: color);
 
   Image profile({double? size, Color? color}) => _icon('profile', size: size, color: color);
@@ -47,7 +47,7 @@ class AppImages {
       width: size,
       height: size,
       color: color,
-      package: MatuleKit.usePackageForImages ? 'ui_kit' : null, // ← ВОТ ТАК!
+  // ← ВОТ ТАК!
     );
   }
 }
