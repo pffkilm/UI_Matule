@@ -16,6 +16,8 @@ import 'package:ui_kit/ui_components/controllers/Toggle.dart';
 import 'package:ui_kit/ui_components/controllers/counter.dart';
 import 'package:ui_kit/ui_components/input.dart';
 import 'package:ui_kit/ui_components/login.dart';
+import 'package:ui_kit/ui_components/search.dart';
+
 
 export 'ui_components/cart/CardBackground.dart';
 export 'colors.dart';
@@ -28,6 +30,7 @@ export 'ui_components/input.dart';
 export 'ui_components/login.dart';
 export 'ui_components/controllers/Toggle.dart';
 export 'ui_components/cart/card.dart';
+export 'ui_components/search.dart';
 
 
 class MatuleKit {
@@ -50,6 +53,7 @@ class MatuleKit {
   Toggle get toggle =>  Toggle ();
   Cards get base => Cards();
   ProductCard get productCard => ProductCard();
+  SimpleSearchBar get search => SimpleSearchBar();
 }
 
 final ui = MatuleKit();

@@ -47,7 +47,9 @@ class AppImages {
       width: size,
       height: size,
       color: color,
-  // ← ВОТ ТАК!
+      package: MatuleKit.usePackageForImages ? 'ui_kit' : null, // ИСПОЛЬЗУЕМ ФЛАГ
     );
   }
+
 }
+

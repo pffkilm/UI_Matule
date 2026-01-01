@@ -139,7 +139,7 @@ class _CartItemStatefulWidgetState extends State<_CartItemStatefulWidget> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start, // ← добавить эту строку
             children: [
               Expanded(
                 child: Text(

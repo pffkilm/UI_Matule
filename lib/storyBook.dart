@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ui_kit/ui_components/BottomNavigation.dart';
 import 'package:ui_kit/ui_components/Menu.dart';
 import 'package:ui_kit/ui_kit.dart';
 
@@ -49,7 +50,7 @@ class _MyFormState extends State<MyForm> {
                     ),
                     Column(
                       children: [
-                      
+
                         SizedBox(height: 16),
 
                         ui.bigButton.delete(
@@ -211,7 +212,7 @@ class _MyFormState extends State<MyForm> {
                       onPressed: (){},
                       enabled: true,
                     ), ),
-
+                    ui.search,
                     SizedBox(height: 10),
                     ui.bottomNavigation.create(initialIndex: 0),
                     ui.bottomNavigation.create(initialIndex: 1),
@@ -219,7 +220,7 @@ class _MyFormState extends State<MyForm> {
                     ui.bottomNavigation.create(initialIndex: 3),
 
 
-                    
+
 
                   ],
                 ),
@@ -231,4 +232,3 @@ class _MyFormState extends State<MyForm> {
 
   }
 }
-
