@@ -50,14 +50,22 @@ class _MyFormState extends State<MyForm> {
                     ),
                     Column(
                       children: [
-
-                        SizedBox(height: 16),
-
+                        ui.bigButton.primary(
+                          text: "Подтвердить",
+                          onPressed: (){},
+                        ),
+                        SizedBox(height: 5),
+                        ui.bigButton.primary(
+                          text: "Далее",
+                          onPressed: null,
+                          enabled: false,
+                        ),
+                        SizedBox(height: 5),
                         ui.bigButton.delete(
                           text: "Подтвердить",
                           onPressed: (){},
                         ),
-                        SizedBox(height: 16),
+                        SizedBox(height: 5),
                         ui.bigButton.unActive(
                           text: "Подтвердить",
                           onPressed: (){},
@@ -71,19 +79,19 @@ class _MyFormState extends State<MyForm> {
                           onPressed: (){},
                           enabled: true,
                         ),
-                        SizedBox(height: 16),
+                        SizedBox(height: 5),
 
                         ui.smallButton.delete(
                           text: "Убрать",
                           onPressed: (){},
                         ),
-                        SizedBox(height: 16),
+                        SizedBox(height: 5),
                         ui.smallButton.primary(
                           text: "Добавить",
                           onPressed: null,
                           enabled: false,
                         ),
-                        SizedBox(height: 16),
+                        SizedBox(height: 5),
 
                         ui.smallButton.unActive(
                           text: "Подтвер...",
@@ -92,7 +100,7 @@ class _MyFormState extends State<MyForm> {
                       ],
                     ),
 
-                    SizedBox(height: 10),
+                    SizedBox(height: 5),
                     Column(
                       children: [
                         ui.chipButton.primary(
@@ -100,14 +108,14 @@ class _MyFormState extends State<MyForm> {
                           onPressed: (){},
                           enabled: true,
                         ),
-                        SizedBox(height: 16),
+                        SizedBox(height:5),
                         ui.chipButton.unActive(
                           text: "Популярные",
                           onPressed: (){},
                         ),
                       ],
                     ),
-                    SizedBox(height: 16),
+                    SizedBox(height: 5),
 
                     Row(
                       children: [
