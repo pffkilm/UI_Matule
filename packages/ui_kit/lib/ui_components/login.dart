@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ui_kit/ui_kit.dart';
 
 class LogoButtons {
-  const LogoButtons();
+   const LogoButtons();
 
 
   Widget vk({VoidCallback? onPressed, bool enabled = true}) {

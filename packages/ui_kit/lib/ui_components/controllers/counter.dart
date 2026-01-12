@@ -46,9 +46,8 @@ class Counter {
           Expanded(
             child: Container(
               alignment: Alignment.center,
-              child: SizedBox(
+              child: Container(
                 height: 16,
-                child: Container(
                   decoration: BoxDecoration(
                     border: Border(
                       right: BorderSide(
@@ -63,7 +62,7 @@ class Counter {
                     padding: EdgeInsets.zero,
                   ),
                 ),
-              ),
+
             ),
           ),
 

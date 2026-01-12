@@ -32,7 +32,7 @@ class ProductCard {
                     children: [
                       if (subtitle != null) ...[
                         Text(
-                          subtitle!,
+                          subtitle,
                           style: ui.typography.captionSemibold.copyWith(
                             color: ui.colors.inputText,
                           ),

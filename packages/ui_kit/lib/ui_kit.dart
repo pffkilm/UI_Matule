@@ -1,7 +1,7 @@
 
 library ui_kit;
 
-import 'package:flutter/material.dart';
+
 import 'package:ui_kit/colors.dart';
 import 'package:ui_kit/typography.dart';
 import 'package:ui_kit/images.dart';
@@ -47,7 +47,7 @@ class MatuleKit {
   SmallButton get smallButton => SmallButton();
   Input get input => Input();
   LogoButtons get logo => LogoButtons();
-  BottomNavigationHelper get bottomNavigation => BottomNavigationHelper();
+  BottomNavigation get bottomNavigation => BottomNavigation();
   Counter get counter => Counter();
   Menu get menu =>  Menu(text: '',);
   Toggle get toggle =>  Toggle ();

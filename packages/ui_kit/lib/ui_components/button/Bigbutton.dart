@@ -7,7 +7,7 @@ class BigButton {
   ButtonStyle _baseStyle() {
     return ElevatedButton.styleFrom(
       minimumSize: const Size(335, 56),
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(10),
       ),
