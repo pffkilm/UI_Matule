@@ -5,7 +5,7 @@ library ui_kit;
 import 'package:ui_kit/colors.dart';
 import 'package:ui_kit/typography.dart';
 import 'package:ui_kit/images.dart';
-import 'package:ui_kit/ui_components/BottomNavigation.dart';
+import 'package:ui_kit/ui_components/tabBar.dart';
 import 'package:ui_kit/ui_components/Menu.dart';
 import 'package:ui_kit/ui_components/button/BigButton.dart';
 import 'package:ui_kit/ui_components/button/ChipButton.dart';

@@ -2,8 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:ui_kit/ui_kit.dart';
 
 class BottomNavigation {
-  Widget create({int initialIndex = 0, ValueChanged<int>? onIndexChanged}) {
-    return _TabBar(initialIndex: initialIndex, onIndexChanged: onIndexChanged);
+  Widget create({
+    int initialIndex = 0,
+    ValueChanged<int>? onIndexChanged
+  }) {
+    return _TabBar(
+        initialIndex: initialIndex,
+        onIndexChanged: onIndexChanged
+    );
   }
 }
 
